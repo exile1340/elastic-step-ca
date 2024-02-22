@@ -23,7 +23,7 @@ Regular elasticsearch setting will still need to be set: [Elasticsearch](https:/
 ### Pulling from Docker Hub
 
 ```bash
-docker pull featherjr/elasticsearch-step:8.12.1
+docker pull featherjr/elasticsearch-step-ca:8.12.2
 ```
 
 ### Building Locally
@@ -38,7 +38,7 @@ cd elasticsearch-step
 Build the Docker image:
 
 ```bash
-docker build -t elasticsearch-step:8.12.1 .
+docker build -t elasticsearch-step-ca:8.12.2 .
 ```
 
 ### Running the Container
@@ -46,7 +46,7 @@ docker build -t elasticsearch-step:8.12.1 .
 To run the Elasticsearch container with Step CLI and certificate renewal:
 
 ```bash
-docker run -d --name elasticsearch-step -p 9200:9200 -v /path/to/certs:/usr/share/elasticsearch/certs featherjr/elasticsearch-step:8.12.1
+docker run -d --name elasticsearch-step -p 9200:9200 -v /path/to/certs:/usr/share/elasticsearch/certs featherjr/elasticsearch-step-ca:8.12.2
 ```
 
 ## Certificate Renewal

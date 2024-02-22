@@ -1,4 +1,4 @@
-FROM elasticsearch:8.12.1
+FROM docker.elastic.co/elasticsearch/elasticsearch:8.12.2
 
 USER root
 
